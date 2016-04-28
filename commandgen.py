@@ -66,15 +66,21 @@ for t in test:
             examples=examples+pad+pad
           examples = examples+pad+line.strip()+'\n'
       examples += '\n\n'
-
-
-
-
-
-
-
-
-
-
-
+    
+    #process the rest of details section.
+    section=''
+    iflag=False
+    for line in details.split('\n'):
+       if (line !=''):
+          if (line[0]==' '):
+             line= pad+pad+line.strip()
+             iflag=True
+          elif iflag:
+             line= '\n'+pad+line
+             print(line)
+             iflag=False
+          if ((len(line)<70) & ((line[-1:]=='.') | (line[-1:]==':'))):
+             line=line+'\n'
+          section = section+'\n'+pad +line
+    details= '\n   **Details:**\n\n'+section+'\n\n'
     outfile.write(usage+summary+options+details+examples+also)
