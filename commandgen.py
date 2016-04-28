@@ -61,9 +61,11 @@ for t in test:
       examples=pad+'**Examples:**\n\n'
       
       for line in match:
+        if (line !=''):
           if (line[0]==' '):
             examples=examples+pad+pad
           examples = examples+pad+line.strip()+'\n'
+      examples += '\n\n'
 
 
 
