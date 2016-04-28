@@ -24,13 +24,12 @@ pagetext=("Title:Juju commands and usage\n\n"
 commands = subprocess.check_output(['juju', 'help', 'commands']).splitlines()
 outfile.write(pagetext)
 for c in commands:
-  print(c)
-  header = '^# '+str(c.split()[0])+ '\n'
-  htext = subprocess.check_output(['juju', 'help', c.split()[0].decode('unicode_escape')]).splitlines()
-  for t in htext:
+    print(c)
+    header = '^# '+str(c.split()[0])+ '\n\n'
+    htext = subprocess.check_output(['juju', 'help', c.split()[0].decode('unicode_escape')])
     p = re.compile(u'Usage:(.+?)\n\nSummary:\n(.+?)\n\nOptions:\n(.+?)Details:\n(.+)', re.DOTALL)
-    help=re.findall(p, t.decode('unicode_escape')[0])
-    print(help)
+    h=re.findall(p, htext.decode('unicode_escape'))
+    help=h[0]
     usage=pad+"**Usage:** `"+help[0]+"`\n\n"
     summary=pad+"**Summary:**\n\n"+pad+help[1]+"\n\n"
     options = pad+'**Options:**\n\n'
@@ -49,10 +48,11 @@ for c in commands:
     
     # search for see also section
     # if it exists, truncate details and process
-    q= re.compile(u'See also:\n(.+?)$',re.DOTALL)
+    q= re.compile(u'See also: \n(.+?)$',re.DOTALL)
     x = re.search( q, details)
     if x:
-      match=details[x.start()+10:].split('\n')
+      print('match')
+      match=details[x.start()+11:].split('\n')
       details=details[:x.start()] # truncate the bit we matched
       also=pad+'**See also:**\n\n'
       
@@ -71,8 +71,9 @@ for c in commands:
       for line in match:
         if (line !=''):
           if (line[0]==' '):
-            examples=examples+pad+pad
-          examples = examples+pad+line.strip()+'\n'
+            examples=examples+pad
+            pass
+          examples = examples+pad+line+'\n'
       examples += '\n\n'
     
     #process the rest of details section.
@@ -81,7 +82,7 @@ for c in commands:
     for line in details.split('\n'):
        if (line !=''):
           if (line[0]==' '):
-             line= pad+pad+line.strip()
+             line= pad+pad+line
              iflag=True
           elif iflag:
              line= '\n'+pad+line
