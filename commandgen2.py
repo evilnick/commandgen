@@ -37,7 +37,7 @@ for c in commands:
       alias=pad+'**Aliases:**\n\n'
       for line in match:
         if (line !=''):
-          alias = alias+pad+pad+'`'+line.strip()+'`\n\n'
+          alias = alias+pad'`'+line.strip()+'`\n\n'
     else:
       alias=u''
  
@@ -52,7 +52,7 @@ for c in commands:
       
       for line in match:
         if (line !=''):
-          also = also+pad+pad+'`'+line.strip().decode('utf-8')+'`\n\n'
+          also = also+pad+pad+'['+line.strip()+'](#'+line.strip()+')\n\n'
     else:
       also=u''    
 
@@ -114,7 +114,7 @@ for c in commands:
           if (line[0]=='-'):
              options = options+pad+"_"+line.strip()+"_\n\n"
           else:
-             options = options+pad+pad+line.strip()+"\n\n"
+             options = options+pad+line.strip()+"\n\n"
       options = options.decode('utf-8')
     else:
       print("**SEVERE WARNING**: {} has no Options!".format(c.split()[0]))
