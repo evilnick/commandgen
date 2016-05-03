@@ -2,8 +2,9 @@
 
 import subprocess
 import re
+import codecs
 
-outfile = open('commands.md','w')
+outfile = codecs.open('commands.md','w', 'utf-8')
 
 
 
@@ -29,7 +30,13 @@ for c in commands:
     htext = subprocess.check_output(['juju', 'help', c.split()[0].decode('unicode_escape')])
     p = re.compile(u'Usage:(.+?)\n\nSummary:\n(.+?)\n\nOptions:\n(.+?)Details:\n(.+)', re.DOTALL)
     h=re.findall(p, htext.decode('unicode_escape'))
-    help=h[0]
+    if not h:
+      print("**SEVERE WARNING**: {} has no DETAILS!".format(c.split()[0]))
+      p = re.compile(u'Usage:(.+?)\n\nSummary:\n(.+?)\n\nOptions:\n(.+?)', re.DOTALL)
+      h=re.findall(p, htext.decode('unicode_escape'))
+      help=(h[0][0],h[0][1],h[0][2],"Details:\nNo further information.")
+    else:
+      help=h[0]
     usage=pad+"**Usage:** `"+help[0]+"`\n\n"
     summary=pad+"**Summary:**\n\n"+pad+help[1]+"\n\n"
     options = pad+'**Options:**\n\n'
@@ -45,18 +52,36 @@ for c in commands:
     details=help[3]
     examples=''
     also=''
-    
-    # search for see also section
+    alias=''
+
+    # search for Aliases section
     # if it exists, truncate details and process
-    q= re.compile(u'See also: \n(.+?)$',re.DOTALL)
+    q= re.compile(u'Aliases: ?(.+?)$',re.DOTALL | re.IGNORECASE)
     x = re.search( q, details)
     if x:
       print('match')
+      match=details[x.start()+8:].split(' ')
+      details=details[:x.start()] # truncate the bit we matched
+      alias=pad+'**Aliases:**\n\n'
+      
+      for line in match:
+        if (line !=''):
+          alias = alias+pad+pad+'`'+line.strip()+'`\n\n'    
+
+
+
+
+    # search for see also section
+    # if it exists, truncate details and process
+    q= re.compile(u'See also: ?\n(.+?)$',re.DOTALL | re.IGNORECASE)
+    x = re.search( q, details)
+    if x:
       match=details[x.start()+11:].split('\n')
       details=details[:x.start()] # truncate the bit we matched
       also=pad+'**See also:**\n\n'
       
       for line in match:
+        if (line !=''):
           also = also+pad+pad+'`'+line.strip()+'`\n\n'
 
     # search for Examples section
@@ -75,7 +100,8 @@ for c in commands:
             pass
           examples = examples+pad+line+'\n'
       examples += '\n\n'
-    
+    else:
+      print("WARNING: {} has no examples!".format(c.split()[0]))
     #process the rest of details section.
     section=''
     iflag=False
@@ -92,4 +118,4 @@ for c in commands:
              line=line+'\n'
           section = section+'\n'+pad +line
     details= '\n   **Details:**\n\n'+section+'\n\n'
-    outfile.write(header+usage+summary+options+details+examples+also+'\n\n')
+    outfile.write(header+usage+summary+options+details+examples+also+alias+'\n\n')

@@ -20,19 +20,19 @@ Click on the expander to see details for each command.
 
    _--format  (= smart)_
 
-      Specify output format (json|smart|yaml)
+   Specify output format (json|smart|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--schema  (= false)_
 
-      display the full action schema
+   display the full action schema
 
    
    **Details:**
@@ -45,9 +45,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `actions`
+   _actions_
 
 
+ 
 
 ^# add-cloud
 
@@ -61,7 +62,7 @@ Click on the expander to see details for each command.
 
    _--replace  (= false)_
 
-      Overwrite any existing cloud information
+   Overwrite any existing cloud information
 
    
    **Details:**
@@ -89,14 +90,16 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju add-cloud mycloud ~/mycloud.yaml
 
 
    **See also:**
 
-      `list-clouds`
+   [list-clouds](#list-clouds)
 
 
+ 
 
 ^# add-credential
 
@@ -110,11 +113,11 @@ Click on the expander to see details for each command.
 
    _-f (= "")_
 
-      The YAML file containing credentials to add
+   The YAML file containing credentials to add
 
    _--replace  (= false)_
 
-      Overwrite existing credential information
+   Overwrite existing credential information
 
    
    **Details:**
@@ -162,21 +165,23 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju add-credential google
           juju add-credential aws -f ~/credentials.yaml
 
 
    **See also:**
 
-      `list-credentials`
+   [list-credentials](#list-credentials)
 
-      `remove-credential`
+   [remove-credential](#remove-credential)
 
-      `set-default-credential`
+   [set-default-credential](#set-default-credential)
 
-      `autoload-credentials`
+   [autoload-credentials](#autoload-credentials)
 
 
+ 
 
 ^# add-machine
 
@@ -190,23 +195,23 @@ Click on the expander to see details for each command.
 
    _--constraints  (= )_
 
-      additional machine constraints
+   additional machine constraints
 
    _--disks  (= )_
 
-      constraints for disks to attach to the machine
+   constraints for disks to attach to the machine
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-n  (= 1)_
 
-      The number of machines to add
+   The number of machines to add
 
    _--series (= "")_
 
-      the charm series
+   the charm series
 
    
    **Details:**
@@ -244,6 +249,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
          juju add-machine                      (starts a new machine)
          juju add-machine -n 2                 (starts 2 new machines)
          juju add-machine lxc                  (starts a new machine with an lxc container)
@@ -257,17 +263,18 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `juju help constraints`
+   [juju help constraints](#juju help constraints)
 
-      `juju help placement`
+   [juju help placement](#juju help placement)
 
-      `juju help remove-machine`
+   [juju help remove-machine](#juju help remove-machine)
 
    **Aliases:**
 
-      `add-machines`
+   _add-machines_
 
 
+ 
 
 ^# add-machines
 
@@ -281,23 +288,23 @@ Click on the expander to see details for each command.
 
    _--constraints  (= )_
 
-      additional machine constraints
+   additional machine constraints
 
    _--disks  (= )_
 
-      constraints for disks to attach to the machine
+   constraints for disks to attach to the machine
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-n  (= 1)_
 
-      The number of machines to add
+   The number of machines to add
 
    _--series (= "")_
 
-      the charm series
+   the charm series
 
    
    **Details:**
@@ -335,6 +342,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
          juju add-machine                      (starts a new machine)
          juju add-machine -n 2                 (starts 2 new machines)
          juju add-machine lxc                  (starts a new machine with an lxc container)
@@ -348,17 +356,18 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `juju help constraints`
+   [juju help constraints](#juju help constraints)
 
-      `juju help placement`
+   [juju help placement](#juju help placement)
 
-      `juju help remove-machine`
+   [juju help remove-machine](#juju help remove-machine)
 
    **Aliases:**
 
-      `add-machines`
+   _add-machines_
 
 
+ 
 
 ^# add-relation
 
@@ -372,9 +381,10 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
 
+ 
 
 ^# add-space
 
@@ -388,7 +398,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -399,6 +409,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# add-ssh-key
 
@@ -412,7 +423,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -427,6 +438,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju add-ssh-key "ssh-rsa qYfS5LieM79HIOr535ret6xy
           AAAAB3NzaC1yc2EAAAADAQA6fgBAAABAQCygc6Rc9XgHdhQqTJ
           Wsoj+I3xGrOtk21xYtKijnhkGqItAHmrE5+VH6PY1rVIUXhpTg
@@ -436,6 +448,7 @@ Click on the expander to see details for each command.
           1LqLncXnBCJfjj0pADXaL5OQ9dmD3aCbi8KFyOEs3UumPosgmh
           VCAfjjHObWHwNQ/ZU2KrX1/lv/+lBChx2tJliqQpyYMiA3nrtS
           jfqQgZfjVF5vz8LESQbGc6+vLcXZ9KQpuYDt joe@ubuntu"
+
    For ease of use it is possible to use shell substitution to pass the key 
    to the command:
    juju add-ssh-key "$(cat ~/mykey.pub)"
@@ -443,17 +456,18 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `list-ssh-key`
+   [list-ssh-key](#list-ssh-key)
 
-      `remove-ssh-key`
+   [remove-ssh-key](#remove-ssh-key)
 
-      `import-ssh-key`
+   [import-ssh-key](#import-ssh-key)
 
    **Aliases:**
 
-      `add-ssh-keys`
+   _add-ssh-keys_
 
 
+ 
 
 ^# add-ssh-keys
 
@@ -467,7 +481,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -482,6 +496,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju add-ssh-key "ssh-rsa qYfS5LieM79HIOr535ret6xy
           AAAAB3NzaC1yc2EAAAADAQA6fgBAAABAQCygc6Rc9XgHdhQqTJ
           Wsoj+I3xGrOtk21xYtKijnhkGqItAHmrE5+VH6PY1rVIUXhpTg
@@ -491,6 +506,7 @@ Click on the expander to see details for each command.
           1LqLncXnBCJfjj0pADXaL5OQ9dmD3aCbi8KFyOEs3UumPosgmh
           VCAfjjHObWHwNQ/ZU2KrX1/lv/+lBChx2tJliqQpyYMiA3nrtS
           jfqQgZfjVF5vz8LESQbGc6+vLcXZ9KQpuYDt joe@ubuntu"
+
    For ease of use it is possible to use shell substitution to pass the key 
    to the command:
    juju add-ssh-key "$(cat ~/mykey.pub)"
@@ -498,17 +514,18 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `list-ssh-key`
+   [list-ssh-key](#list-ssh-key)
 
-      `remove-ssh-key`
+   [remove-ssh-key](#remove-ssh-key)
 
-      `import-ssh-key`
+   [import-ssh-key](#import-ssh-key)
 
    **Aliases:**
 
-      `add-ssh-keys`
+   _add-ssh-keys_
 
 
+ 
 
 ^# add-storage
 
@@ -528,7 +545,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -581,6 +598,7 @@ Click on the expander to see details for each command.
                juju add-storage u/0 data
 
 
+ 
 
 ^# add-subnet
 
@@ -594,7 +612,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -618,6 +636,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# add-unit
 
@@ -631,15 +650,15 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-n, --num-units  (= 1)_
 
-      Number of units to add
+   Number of units to add
 
    _--to (= "")_
 
-      The machine and/or container to deploy the unit in (bypasses constraints)
+   The machine and/or container to deploy the unit in (bypasses constraints)
 
    
    **Details:**
@@ -662,24 +681,32 @@ Click on the expander to see details for each command.
    **Examples:**
 
    Add five units of wordpress on five new machines:
+
           juju add-unit wordpress -n 5
+
    Add one unit of mysql to the existing machine 23:
+
           juju add-unit mysql --to 23
+
    Create a new LXC container on machine 7 and add one unit of mysql:
+
           juju add-unit mysql --to lxc:7
+
    Add a unit of mariadb to LXC container number 3 on machine 24:
+
           juju add-unit mariadb --to 24/lxc/3
 
 
    **See also:**
 
-      `remove-unit`
+   [remove-unit](#remove-unit)
 
    **Aliases:**
 
-      `add-units`
+   _add-units_
 
 
+ 
 
 ^# add-units
 
@@ -693,15 +720,15 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-n, --num-units  (= 1)_
 
-      Number of units to add
+   Number of units to add
 
    _--to (= "")_
 
-      The machine and/or container to deploy the unit in (bypasses constraints)
+   The machine and/or container to deploy the unit in (bypasses constraints)
 
    
    **Details:**
@@ -724,24 +751,32 @@ Click on the expander to see details for each command.
    **Examples:**
 
    Add five units of wordpress on five new machines:
+
           juju add-unit wordpress -n 5
+
    Add one unit of mysql to the existing machine 23:
+
           juju add-unit mysql --to 23
+
    Create a new LXC container on machine 7 and add one unit of mysql:
+
           juju add-unit mysql --to lxc:7
+
    Add a unit of mariadb to LXC container number 3 on machine 24:
+
           juju add-unit mariadb --to 24/lxc/3
 
 
    **See also:**
 
-      `remove-unit`
+   [remove-unit](#remove-unit)
 
    **Aliases:**
 
-      `add-units`
+   _add-units_
 
 
+ 
 
 ^# add-user
 
@@ -755,15 +790,15 @@ Click on the expander to see details for each command.
 
    _--acl (= "read")_
 
-      Access controls
+   Access controls
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    _--models (= "")_
 
-      Models the new user is granted access to
+   Models the new user is granted access to
 
    
    **Details:**
@@ -782,6 +817,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju add-user bob
           juju add-user --share mymodel bob
           juju add-user --controller mycontroller bob
@@ -789,23 +825,24 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `register`
+   [register](#register)
 
-      `grant`
+   [grant](#grant)
 
-      `show-user`
+   [show-user](#show-user)
 
-      `list-users`
+   [list-users](#list-users)
 
-      `switch-user`
+   [switch-user](#switch-user)
 
-      `disable-user`
+   [disable-user](#disable-user)
 
-      `enable-user`
+   [enable-user](#enable-user)
 
-      `change-user-password`
+   [change-user-password](#change-user-password)
 
 
+ 
 
 ^# agree
 
@@ -819,15 +856,15 @@ Click on the expander to see details for each command.
 
    _--format  (= json)_
 
-      Specify output format (json|smart|yaml)
+   Specify output format (json|smart|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--yes  (= false)_
 
-      agree to terms non interactively
+   agree to terms non interactively
 
    
    **Details:**
@@ -842,6 +879,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
        juju agree somePlan/1
            Displays terms for somePlan revision 1 and prompts for agreement.
        juju agree somePlan/1 otherPlan/2
@@ -852,6 +890,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# allocate
 
@@ -865,7 +904,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -884,6 +923,7 @@ Click on the expander to see details for each command.
               Assigns service "db" to an allocation on budget "somebudget" with the limit "42".
 
 
+ 
 
 ^# attach
 
@@ -897,7 +937,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -908,6 +948,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# autoload-credentials
 
@@ -959,11 +1000,12 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `juju list-credentials`
+   [juju list-credentials](#juju list-credentials)
 
-      `juju add-credential`
+   [juju add-credential](#juju add-credential)
 
 
+ 
 
 ^# backups
 
@@ -977,7 +1019,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -988,9 +1030,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `backups`
+   _backups_
 
 
+ 
 
 ^# block
 
@@ -1004,11 +1047,11 @@ Click on the expander to see details for each command.
 
    _--description  (= false)_
 
-      
+   
 
    _-h, --help  (= false)_
 
-      show help on a command or other topic
+   show help on a command or other topic
 
    
    **Details:**
@@ -1033,6 +1076,7 @@ Click on the expander to see details for each command.
              remove-object - block an operation that would remove an object
 
 
+ 
 
 ^# bootstrap
 
@@ -1046,59 +1090,59 @@ Click on the expander to see details for each command.
 
    _--agent-version (= "")_
 
-      Version of tools to use for Juju agents
+   Version of tools to use for Juju agents
 
    _--auto-upgrade  (= false)_
 
-      Upgrade to the latest patch release tools on first bootstrap
+   Upgrade to the latest patch release tools on first bootstrap
 
    _--bootstrap-constraints  (= )_
 
-      Specify bootstrap machine constraints
+   Specify bootstrap machine constraints
 
    _--bootstrap-series (= "")_
 
-      Specify the series of the bootstrap machine
+   Specify the series of the bootstrap machine
 
    _--config  (= )_
 
-      Specify a controller configuration file, or one or more configuration
+   Specify a controller configuration file, or one or more configuration
 
-      options
+   options
 
-      (--config config.yaml [--config key=value ...])
+   (--config config.yaml [--config key=value ...])
 
    _--constraints  (= )_
 
-      Set model constraints
+   Set model constraints
 
    _--credential (= "")_
 
-      Credentials to use when bootstrapping
+   Credentials to use when bootstrapping
 
    _-d, --default-model (= "default")_
 
-      Name of the default hosted model for the controller
+   Name of the default hosted model for the controller
 
    _--keep-broken  (= false)_
 
-      Do not destroy the model if bootstrap fails
+   Do not destroy the model if bootstrap fails
 
    _--metadata-source (= "")_
 
-      Local path to use as tools and/or metadata source
+   Local path to use as tools and/or metadata source
 
    _--no-gui  (= false)_
 
-      Do not install the Juju GUI in the controller when bootstrapping
+   Do not install the Juju GUI in the controller when bootstrapping
 
    _--to (= "")_
 
-      Placement directive indicating an instance to bootstrap
+   Placement directive indicating an instance to bootstrap
 
    _--upload-tools  (= false)_
 
-      Upload local version of tools before bootstrapping
+   Upload local version of tools before bootstrapping
 
    
    **Details:**
@@ -1155,6 +1199,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju bootstrap mycontroller google
           juju bootstrap --config=~/config-rs.yaml mycontroller rackspace
           juju bootstrap --config agent-version=1.25.3 mycontroller aws
@@ -1163,13 +1208,14 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `add-credentials`
+   [add-credentials](#add-credentials)
 
-      `create-model`
+   [create-model](#create-model)
 
-      `set-constraints`
+   [set-constraints](#set-constraints)
 
 
+ 
 
 ^# cached-images
 
@@ -1183,27 +1229,27 @@ Click on the expander to see details for each command.
 
    _--arch (= "")_
 
-      the architecture of the image to list eg amd64
+   the architecture of the image to list eg amd64
 
    _--format  (= yaml)_
 
-      Specify output format (json|yaml)
+   Specify output format (json|yaml)
 
    _--kind (= "")_
 
-      the image kind to list eg lxd
+   the image kind to list eg lxd
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--series (= "")_
 
-      the series of the image to list eg xenial
+   the series of the image to list eg xenial
 
    
    **Details:**
@@ -1222,6 +1268,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
         # List all cached images.
         juju list-cache-images
         # List cached images for xenial.
@@ -1232,9 +1279,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `cached-images`
+   _cached-images_
 
 
+ 
 
 ^# change-user-password
 
@@ -1248,7 +1296,7 @@ Click on the expander to see details for each command.
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    
    **Details:**
@@ -1260,6 +1308,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
         # Change the password for the user you are logged in as.
         juju change-user-password
         # Change the password for bob.
@@ -1267,6 +1316,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# charm
 
@@ -1280,11 +1330,11 @@ Click on the expander to see details for each command.
 
    _--description  (= false)_
 
-      
+   
 
    _-h, --help  (= false)_
 
-      show help on a command or other topic
+   show help on a command or other topic
 
    
    **Details:**
@@ -1300,6 +1350,7 @@ Click on the expander to see details for each command.
              resources      - alias for 'list-resources'
 
 
+ 
 
 ^# collect-metrics
 
@@ -1313,7 +1364,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -1328,6 +1379,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# create-backup
 
@@ -1341,15 +1393,15 @@ Click on the expander to see details for each command.
 
    _--filename (= "juju-backup-<date>-<time>.tar.gz")_
 
-      download to this file
+   download to this file
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--no-download  (= false)_
 
-      do not download the archive
+   do not download the archive
 
    
    **Details:**
@@ -1376,6 +1428,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# create-budget
 
@@ -1399,6 +1452,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# create-model
 
@@ -1412,19 +1466,19 @@ Click on the expander to see details for each command.
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    _--config  (= )_
 
-      specify a controller config file, or one or more controller configuration options (--config config.yaml [--config k=v ...])
+   specify a controller config file, or one or more controller configuration options (--config config.yaml [--config k=v ...])
 
    _--credential (= "")_
 
-      the name of the cloud and credentials the new model uses to create cloud resources
+   the name of the cloud and credentials the new model uses to create cloud resources
 
    _--owner (= "")_
 
-      the owner of the new model if not the current user
+   the owner of the new model if not the current user
 
    
    **Details:**
@@ -1456,6 +1510,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju create-model new-model
           juju create-model new-model --config aws-creds.yaml --config image-stream=daily
           
@@ -1464,9 +1519,10 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `juju help model share`
+   [juju help model share](#juju help model share)
 
 
+ 
 
 ^# create-storage-pool
 
@@ -1480,7 +1536,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -1522,6 +1578,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# debug-hooks
 
@@ -1535,15 +1592,15 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--proxy  (= false)_
 
-      Proxy through the API server
+   Proxy through the API server
 
    _--pty  (= true)_
 
-      Enable pseudo-tty allocation
+   Enable pseudo-tty allocation
 
    
    **Details:**
@@ -1553,6 +1610,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# debug-log
 
@@ -1566,43 +1624,43 @@ Click on the expander to see details for each command.
 
    _-T, --no-tail  (= false)_
 
-      Stop after returning existing log messages
+   Stop after returning existing log messages
 
    _--exclude-module  (= )_
 
-      Do not show log messages for these logging modules
+   Do not show log messages for these logging modules
 
    _-i, --include  (= )_
 
-      Only show log messages for these entities
+   Only show log messages for these entities
 
    _--include-module  (= )_
 
-      Only show log messages for these logging modules
+   Only show log messages for these logging modules
 
    _-l, --level (= "")_
 
-      Log level to show, one of [TRACE, DEBUG, INFO, WARNING, ERROR]
+   Log level to show, one of [TRACE, DEBUG, INFO, WARNING, ERROR]
 
    _--limit  (= 0)_
 
-      Exit once this many of the most recent (possibly filtered) lines are shown
+   Exit once this many of the most recent (possibly filtered) lines are shown
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-n, --lines  (= 10)_
 
-      Show this many of the most recent (possibly filtered) lines, and continue to append
+   Show this many of the most recent (possibly filtered) lines, and continue to append
 
    _--replay  (= false)_
 
-      Show the entire (possibly filtered) log and continue to append
+   Show the entire (possibly filtered) log and continue to append
 
    _-x, --exclude  (= )_
 
-      Do not show log messages for these entities
+   Do not show log messages for these entities
 
    
    **Details:**
@@ -1636,25 +1694,35 @@ Click on the expander to see details for each command.
 
    Exclude all machine 0 messages; show a maximum of 100 lines; and continue
    to append filtered messages:
+
           juju debug-log --exclude machine-0 --lines 100
+
    Include only unit mysql/0 messages; show a maximum of 50 lines; and then
    exit:
+
           juju debug-log -T --include unit-mysql-0 --lines 50
+
    Show all messages from unit apache2/3 or machine 1 and then exit:
+
           juju debug-log -T --replay --include unit-apache2-3 --include machine-1
+
    Include all juju.worker.uniter logging module messages that are also unit
    wordpress/0 messages and continue to append filtered messages:
+
           juju debug-log --replay --include-module juju.worker.uniter --include \
               unit-wordpress-0
+
    To see all WARNING and ERROR messages:
+
           juju debug-log --replay --level WARNING
 
 
    **See also:**
 
-      `status`
+   [status](#status)
 
 
+ 
 
 ^# debug-metrics
 
@@ -1668,15 +1736,15 @@ Click on the expander to see details for each command.
 
    _--json  (= false)_
 
-      output metrics as json
+   output metrics as json
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-n  (= 0)_
 
-      number of metrics to retrieve
+   number of metrics to retrieve
 
    
    **Details:**
@@ -1686,6 +1754,7 @@ Click on the expander to see details for each command.
    display recently collected metrics and exit
 
 
+ 
 
 ^# deploy
 
@@ -1699,55 +1768,55 @@ Click on the expander to see details for each command.
 
    _--bind (= "")_
 
-      Configure service endpoint bindings to spaces
+   Configure service endpoint bindings to spaces
 
    _--budget (= "personal:0")_
 
-      budget and allocation limit
+   budget and allocation limit
 
    _--channel (= "")_
 
-      channel to use when getting the charm or bundle from the charm store
+   channel to use when getting the charm or bundle from the charm store
 
    _--config  (= )_
 
-      path to yaml-formatted service config
+   path to yaml-formatted service config
 
    _--constraints  (= )_
 
-      set service constraints
+   set service constraints
 
    _--force  (= false)_
 
-      allow a charm to be deployed to a machine running an unsupported series
+   allow a charm to be deployed to a machine running an unsupported series
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-n, --num-units  (= 1)_
 
-      number of service units to deploy for principal charms
+   number of service units to deploy for principal charms
 
    _--plan (= "")_
 
-      plan to deploy charm under
+   plan to deploy charm under
 
    _--resource  (= )_
 
-      resource to be uploaded to the controller
+   resource to be uploaded to the controller
 
    _--series (= "")_
 
-      the series on which to deploy
+   the series on which to deploy
 
    _--storage  (= )_
 
-      charm storage constraints
+   charm storage constraints
 
    _--to (= "")_
 
-      The machine and/or container to deploy the unit in (bypasses constraints)
+   The machine and/or container to deploy the unit in (bypasses constraints)
 
    
    **Details:**
@@ -1839,6 +1908,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
          juju deploy mysql --to 23       (deploy to machine 23)
          juju deploy mysql --to 24/lxc/3 (deploy to lxc container 3 on host machine 24)
          juju deploy mysql --to lxc:25   (deploy to a new lxc container on host machine 25)
@@ -1851,15 +1921,16 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `juju help spaces`
+   [juju help spaces](#juju help spaces)
 
-      `juju help constraints`
+   [juju help constraints](#juju help constraints)
 
-      `juju help set-constraints`
+   [juju help set-constraints](#juju help set-constraints)
 
-      `juju help get-constraints`
+   [juju help get-constraints](#juju help get-constraints)
 
 
+ 
 
 ^# destroy-controller
 
@@ -1873,11 +1944,11 @@ Click on the expander to see details for each command.
 
    _--destroy-all-models  (= false)_
 
-      Destroy all hosted models in the controller
+   Destroy all hosted models in the controller
 
    _-y, --yes  (= false)_
 
-      Do not ask for confirmation
+   Do not ask for confirmation
 
    
    **Details:**
@@ -1890,14 +1961,16 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju destroy-controller --destroy-all-models mycontroller
 
 
    **See also:**
 
-      `kill-controller`
+   [kill-controller](#kill-controller)
 
 
+ 
 
 ^# destroy-model
 
@@ -1911,7 +1984,7 @@ Click on the expander to see details for each command.
 
    _-y, --yes  (= false)_
 
-      Do not prompt for confirmation
+   Do not prompt for confirmation
 
    
    **Details:**
@@ -1926,12 +1999,17 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
             juju destroy-model test
             juju destroy-model -y mymodel
-   See also: destroy-controller
 
 
+   **See also:**
 
+   [estroy-controller](#estroy-controller)
+
+
+ 
 
 ^# destroy-relation
 
@@ -1945,7 +2023,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -1962,9 +2040,12 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju remove-relation mysql wordpress
+
    In the case of multiple relations, the relation name should be specified
    at least once - the following examples will all have the same effect:
+
           juju remove-relation mediawiki:db mariadb:db
           juju remove-relation mediawiki mariadb:db
           juju remove-relation mediawiki:db mariadb
@@ -1973,15 +2054,16 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `add-relation`
+   [add-relation](#add-relation)
 
-      `remove-service`
+   [remove-service](#remove-service)
 
    **Aliases:**
 
-      `destroy-relation`
+   _destroy-relation_
 
 
+ 
 
 ^# destroy-service
 
@@ -1995,7 +2077,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -2012,15 +2094,17 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju remove-service hadoop
           juju remove-service -m test-model mariadb
 
 
    **Aliases:**
 
-      `destroy-service`
+   _destroy-service_
 
 
+ 
 
 ^# destroy-unit
 
@@ -2034,7 +2118,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -2052,9 +2136,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `destroy-unit`
+   _destroy-unit_
 
 
+ 
 
 ^# disable-user
 
@@ -2068,7 +2153,7 @@ Click on the expander to see details for each command.
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    
    **Details:**
@@ -2082,18 +2167,20 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju disable-user bob
 
 
    **See also:**
 
-      `enable-user`
+   [enable-user](#enable-user)
 
-      `list-users`
+   [list-users](#list-users)
 
-      `login`
+   [login](#login)
 
 
+ 
 
 ^# download-backup
 
@@ -2107,11 +2194,11 @@ Click on the expander to see details for each command.
 
    _--filename (= "")_
 
-      download target
+   download target
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -2124,6 +2211,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# enable-ha
 
@@ -2137,31 +2225,31 @@ Click on the expander to see details for each command.
 
    _--constraints  (= )_
 
-      additional machine constraints
+   additional machine constraints
 
    _--format  (= simple)_
 
-      Specify output format (json|simple|yaml)
+   Specify output format (json|simple|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-n  (= 0)_
 
-      number of controllers to make available
+   number of controllers to make available
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--series (= "")_
 
-      the charm series
+   the charm series
 
    _--to (= "")_
 
-      the machine(s) to become controllers, bypasses constraints
+   the machine(s) to become controllers, bypasses constraints
 
    
    **Details:**
@@ -2174,6 +2262,7 @@ Click on the expander to see details for each command.
 
 
    **Examples:**
+
 
        juju enable-ha
            Ensure that the controller is still in highly available mode. If
@@ -2194,6 +2283,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# enable-user
 
@@ -2207,7 +2297,7 @@ Click on the expander to see details for each command.
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    
    **Details:**
@@ -2218,18 +2308,20 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju enable-user bob
 
 
    **See also:**
 
-      `disable-user`
+   [disable-user](#disable-user)
 
-      `list-users`
+   [list-users](#list-users)
 
-      `login`
+   [login](#login)
 
 
+ 
 
 ^# expose
 
@@ -2243,7 +2335,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -2255,14 +2347,16 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju expose wordpress
 
 
    **See also:**
 
-      `unexpose`
+   [unexpose](#unexpose)
 
 
+ 
 
 ^# get-config
 
@@ -2276,15 +2370,15 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (yaml)
+   Specify output format (yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -2298,23 +2392,25 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju get-config mysql
           juju get-config mysql-testing
 
 
    **See also:**
 
-      `set-config`
+   [set-config](#set-config)
 
-      `deploy`
+   [deploy](#deploy)
 
-      `status`
+   [status](#status)
 
    **Aliases:**
 
-      `get-configs`
+   _get-configs_
 
 
+ 
 
 ^# get-configs
 
@@ -2328,15 +2424,15 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (yaml)
+   Specify output format (yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -2350,23 +2446,25 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju get-config mysql
           juju get-config mysql-testing
 
 
    **See also:**
 
-      `set-config`
+   [set-config](#set-config)
 
-      `deploy`
+   [deploy](#deploy)
 
-      `status`
+   [status](#status)
 
    **Aliases:**
 
-      `get-configs`
+   _get-configs_
 
 
+ 
 
 ^# get-constraints
 
@@ -2380,15 +2478,15 @@ Click on the expander to see details for each command.
 
    _--format  (= constraints)_
 
-      Specify output format (constraints|json|yaml)
+   Specify output format (constraints|json|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -2410,19 +2508,21 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju get-constraints mysql
           juju get-constraints -m mymodel apache2
 
 
    **See also:**
 
-      `set-constraints`
+   [set-constraints](#set-constraints)
 
-      `get-model-constraints`
+   [get-model-constraints](#get-model-constraints)
 
-      `set-model-constraints`
+   [set-model-constraints](#set-model-constraints)
 
 
+ 
 
 ^# get-model-config
 
@@ -2436,15 +2536,15 @@ Click on the expander to see details for each command.
 
    _--format  (= smart)_
 
-      Specify output format (json|smart|yaml)
+   Specify output format (json|smart|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -2458,14 +2558,21 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju get-model-config default-series
           juju get-model-config -m mymodel type
-   See also: list-models
-                set-model-config
-                unset-model-config
 
 
+   **See also:**
 
+   [ist-models](#ist-models)
+
+   [set-model-config](#set-model-config)
+
+   [unset-model-config](#unset-model-config)
+
+
+ 
 
 ^# get-model-constraints
 
@@ -2479,15 +2586,15 @@ Click on the expander to see details for each command.
 
    _--format  (= constraints)_
 
-      Specify output format (constraints|json|yaml)
+   Specify output format (constraints|json|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -2506,15 +2613,23 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju get-model-constraints
           juju get-model-constraints -m mymodel
-   See also: list-models
-                set-model-constraints
-                set-constraints
-                get-constraints
 
 
+   **See also:**
 
+   [ist-models](#ist-models)
+
+   [set-model-constraints](#set-model-constraints)
+
+   [set-constraints](#set-constraints)
+
+   [get-constraints](#get-constraints)
+
+
+ 
 
 ^# grant
 
@@ -2528,11 +2643,11 @@ Click on the expander to see details for each command.
 
    _--acl (= "read")_
 
-      Access control ('read' or 'write')
+   Access control ('read' or 'write')
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    
    **Details:**
@@ -2550,20 +2665,26 @@ Click on the expander to see details for each command.
    **Examples:**
 
    Grant user 'joe' default (read) access to model 'mymodel':
+
           juju grant joe mymodel
+
    Grant user 'jim' write access to model 'mymodel':
+
           juju grant --acl=write jim mymodel
+
    Grant user 'sam' default (read) access to models 'model1' and 'model2':
+
           juju grant sam model1 model2
 
 
    **See also:**
 
-      `revoke`
+   [revoke](#revoke)
 
-      `add-user`
+   [add-user](#add-user)
 
 
+ 
 
 ^# gui
 
@@ -2577,15 +2698,15 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--no-browser  (= false)_
 
-      do not try to open the web browser, just print the Juju GUI URL
+   do not try to open the web browser, just print the Juju GUI URL
 
    _--show-credentials  (= false)_
 
-      show admin credentials to use for logging into the Juju GUI
+   show admin credentials to use for logging into the Juju GUI
 
    
    **Details:**
@@ -2603,6 +2724,7 @@ Click on the expander to see details for each command.
    An error is returned if the Juju GUI is not available in the controller.
 
 
+ 
 
 ^# help
 
@@ -2612,14 +2734,14 @@ Click on the expander to see details for each command.
 
    show help on a command or other topic
 
+Details:
 
-   
-   **Details:**
+   **See also:**
+
+   [opics](#opics)
 
 
-   See also: topics
-
-
+ 
 
 ^# help-tool
 
@@ -2630,6 +2752,7 @@ Click on the expander to see details for each command.
    show help on a juju charm tool
 
 
+ 
 
 ^# import-ssh-key
 
@@ -2643,7 +2766,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -2666,22 +2789,26 @@ Click on the expander to see details for each command.
 
    Import all public keys associated with user account 'phamilton' on the
    GitHub service:
+
           juju import-ssh-key gh:phamilton
+
    Multiple identities may be specified in a space delimited list:
+
           juju import-ssh-key rheinlein lp:iasmiov gh:hharrison
 
 
    **See also:**
 
-      `add-ssh-key`
+   [add-ssh-key](#add-ssh-key)
 
-      `list-ssh-keys`
+   [list-ssh-keys](#list-ssh-keys)
 
    **Aliases:**
 
-      `import-ssh-keys`
+   _import-ssh-keys_
 
 
+ 
 
 ^# import-ssh-keys
 
@@ -2695,7 +2822,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -2718,22 +2845,26 @@ Click on the expander to see details for each command.
 
    Import all public keys associated with user account 'phamilton' on the
    GitHub service:
+
           juju import-ssh-key gh:phamilton
+
    Multiple identities may be specified in a space delimited list:
+
           juju import-ssh-key rheinlein lp:iasmiov gh:hharrison
 
 
    **See also:**
 
-      `add-ssh-key`
+   [add-ssh-key](#add-ssh-key)
 
-      `list-ssh-keys`
+   [list-ssh-keys](#list-ssh-keys)
 
    **Aliases:**
 
-      `import-ssh-keys`
+   _import-ssh-keys_
 
 
+ 
 
 ^# kill-controller
 
@@ -2747,7 +2878,7 @@ Click on the expander to see details for each command.
 
    _-y, --yes  (= false)_
 
-      do not ask for confirmation
+   do not ask for confirmation
 
    
    **Details:**
@@ -2765,6 +2896,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# list-actions
 
@@ -2778,19 +2910,19 @@ Click on the expander to see details for each command.
 
    _--format  (= smart)_
 
-      Specify output format (json|smart|yaml)
+   Specify output format (json|smart|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--schema  (= false)_
 
-      display the full action schema
+   display the full action schema
 
    
    **Details:**
@@ -2803,9 +2935,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `actions`
+   _actions_
 
 
+ 
 
 ^# list-agreements
 
@@ -2819,11 +2952,11 @@ Click on the expander to see details for each command.
 
    _--format  (= json)_
 
-      Specify output format (json|yaml)
+   Specify output format (json|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -2833,6 +2966,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# list-all-blocks
 
@@ -2846,15 +2980,15 @@ Click on the expander to see details for each command.
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -2863,6 +2997,7 @@ Click on the expander to see details for each command.
    List all blocks for models within the specified controller
 
 
+ 
 
 ^# list-backups
 
@@ -2876,7 +3011,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -2887,9 +3022,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `backups`
+   _backups_
 
 
+ 
 
 ^# list-budgets
 
@@ -2903,11 +3039,11 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular)
+   Specify output format (json|tabular)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -2920,6 +3056,7 @@ Click on the expander to see details for each command.
           juju list-budgets
 
 
+ 
 
 ^# list-cached-images
 
@@ -2933,27 +3070,27 @@ Click on the expander to see details for each command.
 
    _--arch (= "")_
 
-      the architecture of the image to list eg amd64
+   the architecture of the image to list eg amd64
 
    _--format  (= yaml)_
 
-      Specify output format (json|yaml)
+   Specify output format (json|yaml)
 
    _--kind (= "")_
 
-      the image kind to list eg lxd
+   the image kind to list eg lxd
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--series (= "")_
 
-      the series of the image to list eg xenial
+   the series of the image to list eg xenial
 
    
    **Details:**
@@ -2972,6 +3109,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
         # List all cached images.
         juju list-cache-images
         # List cached images for xenial.
@@ -2982,9 +3120,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `cached-images`
+   _cached-images_
 
 
+ 
 
 ^# list-clouds
 
@@ -2998,11 +3137,11 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -3020,13 +3159,20 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju list-clouds
-   See also: show-cloud
-                update-clouds
-                add-cloud
 
 
+   **See also:**
 
+   [how-cloud](#how-cloud)
+
+   [update-clouds](#update-clouds)
+
+   [add-cloud](#add-cloud)
+
+
+ 
 
 ^# list-controllers
 
@@ -3040,11 +3186,11 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -3055,17 +3201,19 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju list-controllers
           juju list-controllers --format json --output ~/tmp/controllers.json
 
 
    **See also:**
 
-      `list-models`
+   [list-models](#list-models)
 
-      `show-controller`
+   [show-controller](#show-controller)
 
 
+ 
 
 ^# list-credentials
 
@@ -3079,15 +3227,15 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--show-secrets  (= false)_
 
-      Show secrets
+   Show secrets
 
    
    **Details:**
@@ -3115,6 +3263,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju list-credentials
           juju list-credentials aws
           juju list-credentials --format yaml --show-secrets
@@ -3122,15 +3271,16 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `add-credential`
+   [add-credential](#add-credential)
 
-      `remove-credential`
+   [remove-credential](#remove-credential)
 
-      `set-default-credential`
+   [set-default-credential](#set-default-credential)
 
-      `autoload-credentials`
+   [autoload-credentials](#autoload-credentials)
 
 
+ 
 
 ^# list-machine
 
@@ -3144,19 +3294,19 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--utc  (= false)_
 
-      Display time as UTC in RFC3339 format
+   Display time as UTC in RFC3339 format
 
    
    **Details:**
@@ -3170,22 +3320,24 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
            juju list-machines
 
 
    **See also:**
 
-      `status`
+   [status](#status)
 
    **Aliases:**
 
-      `machines,`
+   _machines,_
 
-      `machine,`
+   _machine,_
 
-      `list-machine`
+   _list-machine_
 
 
+ 
 
 ^# list-machines
 
@@ -3199,19 +3351,19 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--utc  (= false)_
 
-      Display time as UTC in RFC3339 format
+   Display time as UTC in RFC3339 format
 
    
    **Details:**
@@ -3225,22 +3377,24 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
            juju list-machines
 
 
    **See also:**
 
-      `status`
+   [status](#status)
 
    **Aliases:**
 
-      `machines,`
+   _machines,_
 
-      `machine,`
+   _machine,_
 
-      `list-machine`
+   _list-machine_
 
 
+ 
 
 ^# list-models
 
@@ -3254,31 +3408,31 @@ Click on the expander to see details for each command.
 
    _--all  (= false)_
 
-      Lists all models, regardless of user accessibility (administrative users only)
+   Lists all models, regardless of user accessibility (administrative users only)
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    _--exact-time  (= false)_
 
-      Use full timestamps
+   Use full timestamps
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--user (= "")_
 
-      The user to list models for (administrative users only)
+   The user to list models for (administrative users only)
 
    _--uuid  (= false)_
 
-      Display UUID for models
+   Display UUID for models
 
    
    **Details:**
@@ -3292,14 +3446,21 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju list-models
           juju list-models --user bob
-   See also: create-model
-                share-model
-                unshare-model
 
 
+   **See also:**
 
+   [reate-model](#reate-model)
+
+   [share-model](#share-model)
+
+   [unshare-model](#unshare-model)
+
+
+ 
 
 ^# list-payloads
 
@@ -3313,15 +3474,15 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -3342,6 +3503,7 @@ Click on the expander to see details for each command.
    - payload status
 
 
+ 
 
 ^# list-plans
 
@@ -3355,11 +3517,11 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|smart|summary|tabular|yaml)
+   Specify output format (json|smart|summary|tabular|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -3372,6 +3534,7 @@ Click on the expander to see details for each command.
           juju list-plans cs:webapp
 
 
+ 
 
 ^# list-resources
 
@@ -3385,19 +3548,19 @@ Click on the expander to see details for each command.
 
    _--details  (= false)_
 
-      show detailed information about resources used by each unit.
+   show detailed information about resources used by each unit.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -3410,9 +3573,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `resources`
+   _resources_
 
 
+ 
 
 ^# list-shares
 
@@ -3426,15 +3590,15 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -3445,15 +3609,17 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju list-shares
           juju list-shares -m mymodel
 
 
    **See also:**
 
-      `grant`
+   [grant](#grant)
 
 
+ 
 
 ^# list-spaces
 
@@ -3467,19 +3633,19 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (json|yaml)
+   Specify output format (json|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--short  (= false)_
 
-      only display spaces.
+   only display spaces.
 
    
    **Details:**
@@ -3494,9 +3660,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `spaces`
+   _spaces_
 
 
+ 
 
 ^# list-ssh-key
 
@@ -3510,11 +3677,11 @@ Click on the expander to see details for each command.
 
    _--full  (= false)_
 
-      Show full key instead of just the fingerprint
+   Show full key instead of just the fingerprint
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -3532,20 +3699,24 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju list-ssh-keys
+
    To examine the full key, use the '--full' option:
+
           juju list-keys -m jujutest --full
 
 
    **Aliases:**
 
-      `ssh-key,`
+   _ssh-key,_
 
-      `ssh-keys,`
+   _ssh-keys,_
 
-      `list-ssh-key`
+   _list-ssh-key_
 
 
+ 
 
 ^# list-ssh-keys
 
@@ -3559,11 +3730,11 @@ Click on the expander to see details for each command.
 
    _--full  (= false)_
 
-      Show full key instead of just the fingerprint
+   Show full key instead of just the fingerprint
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -3581,20 +3752,24 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju list-ssh-keys
+
    To examine the full key, use the '--full' option:
+
           juju list-keys -m jujutest --full
 
 
    **Aliases:**
 
-      `ssh-key,`
+   _ssh-key,_
 
-      `ssh-keys,`
+   _ssh-keys,_
 
-      `list-ssh-key`
+   _list-ssh-key_
 
 
+ 
 
 ^# list-storage
 
@@ -3608,23 +3783,23 @@ Click on the expander to see details for each command.
 
    _--filesystem  (= false)_
 
-      list filesystem storage
+   list filesystem storage
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--volume  (= false)_
 
-      list volume storage
+   list volume storage
 
    
    **Details:**
@@ -3645,9 +3820,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `storage`
+   _storage_
 
 
+ 
 
 ^# list-storage-pools
 
@@ -3661,23 +3837,23 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--name  (= )_
 
-      only show pools with these names
+   only show pools with these names
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--provider  (= )_
 
-      only show pools of these provider types
+   only show pools of these provider types
 
    
    **Details:**
@@ -3717,6 +3893,7 @@ Click on the expander to see details for each command.
             pool name
 
 
+ 
 
 ^# list-subnets
 
@@ -3730,23 +3907,23 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (json|yaml)
+   Specify output format (json|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--space (= "")_
 
-      filter results by space name
+   filter results by space name
 
    _--zone (= "")_
 
-      filter results by zone name
+   filter results by zone name
 
    
    **Details:**
@@ -3763,9 +3940,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `subnets`
+   _subnets_
 
 
+ 
 
 ^# list-users
 
@@ -3779,23 +3957,23 @@ Click on the expander to see details for each command.
 
    _--all  (= false)_
 
-      Include disabled users
+   Include disabled users
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    _--exact-time  (= false)_
 
-      Use full timestamp for connection times
+   Use full timestamp for connection times
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -3806,22 +3984,24 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju list-users
 
 
    **See also:**
 
-      `add-user`
+   [add-user](#add-user)
 
-      `register`
+   [register](#register)
 
-      `show-user`
+   [show-user](#show-user)
 
-      `disable-user`
+   [disable-user](#disable-user)
 
-      `enable-user`
+   [enable-user](#enable-user)
 
 
+ 
 
 ^# login
 
@@ -3835,7 +4015,7 @@ Click on the expander to see details for each command.
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    
    **Details:**
@@ -3852,6 +4032,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
         # Log in as the current user for the controller.
         juju login
         # Log in as the user "bob".
@@ -3859,6 +4040,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# logout
 
@@ -3872,11 +4054,11 @@ Click on the expander to see details for each command.
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    _--force  (= false)_
 
-      force logout when a locally recorded password is detected
+   force logout when a locally recorded password is detected
 
    
    **Details:**
@@ -3894,6 +4076,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# machine
 
@@ -3907,19 +4090,19 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--utc  (= false)_
 
-      Display time as UTC in RFC3339 format
+   Display time as UTC in RFC3339 format
 
    
    **Details:**
@@ -3933,22 +4116,24 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
            juju list-machines
 
 
    **See also:**
 
-      `status`
+   [status](#status)
 
    **Aliases:**
 
-      `machines,`
+   _machines,_
 
-      `machine,`
+   _machine,_
 
-      `list-machine`
+   _list-machine_
 
 
+ 
 
 ^# machines
 
@@ -3962,19 +4147,19 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--utc  (= false)_
 
-      Display time as UTC in RFC3339 format
+   Display time as UTC in RFC3339 format
 
    
    **Details:**
@@ -3988,22 +4173,24 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
            juju list-machines
 
 
    **See also:**
 
-      `status`
+   [status](#status)
 
    **Aliases:**
 
-      `machines,`
+   _machines,_
 
-      `machine,`
+   _machine,_
 
-      `list-machine`
+   _list-machine_
 
 
+ 
 
 ^# publish
 
@@ -4017,11 +4204,11 @@ Click on the expander to see details for each command.
 
    _--from (= ".")_
 
-      path for charm to be published
+   path for charm to be published
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -4043,6 +4230,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# register
 
@@ -4070,17 +4258,19 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju register MFATA3JvZDAnExMxMDQuMTU0LjQyLjQ0OjE3MDcwExAxMC4xMjguMC4yOjE3MDcw
           BCBEFCaXerhNImkKKabuX5ULWf2Bp4AzPNJEbXVWgraLrAA=
 
 
    **See also:**
 
-      `add-user`
+   [add-user](#add-user)
 
-      `change-user-password`
+   [change-user-password](#change-user-password)
 
 
+ 
 
 ^# remove-all-blocks
 
@@ -4094,7 +4284,7 @@ Click on the expander to see details for each command.
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    
    **Details:**
@@ -4108,11 +4298,12 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `juju help block`
+   [juju help block](#juju help block)
 
-      `juju help unblock`
+   [juju help unblock](#juju help unblock)
 
 
+ 
 
 ^# remove-backup
 
@@ -4126,7 +4317,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -4136,6 +4327,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# remove-cached-images
 
@@ -4149,19 +4341,19 @@ Click on the expander to see details for each command.
 
    _--arch (= "")_
 
-      the architecture of the image to remove eg amd64
+   the architecture of the image to remove eg amd64
 
    _--kind (= "")_
 
-      the image kind to remove eg lxd
+   the image kind to remove eg lxd
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--series (= "")_
 
-      the series of the image to remove eg xenial
+   the series of the image to remove eg xenial
 
    
    **Details:**
@@ -4177,11 +4369,13 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
         # Remove cached lxd image for xenial amd64.
         juju remove-cached-images --kind lxd --series xenial --arch amd64
 
 
 
+ 
 
 ^# remove-credential
 
@@ -4204,20 +4398,22 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju remove-credential rackspace credential_name
 
 
    **See also:**
 
-      `add-credential`
+   [add-credential](#add-credential)
 
-      `list-credentials`
+   [list-credentials](#list-credentials)
 
-      `set-default-credential`
+   [set-default-credential](#set-default-credential)
 
-      `autoload-credentials`
+   [autoload-credentials](#autoload-credentials)
 
 
+ 
 
 ^# remove-machine
 
@@ -4231,11 +4427,11 @@ Click on the expander to see details for each command.
 
    _--force  (= false)_
 
-      completely remove machine and all dependencies
+   completely remove machine and all dependencies
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -4257,9 +4453,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `remove-machines`
+   _remove-machines_
 
 
+ 
 
 ^# remove-machines
 
@@ -4273,11 +4470,11 @@ Click on the expander to see details for each command.
 
    _--force  (= false)_
 
-      completely remove machine and all dependencies
+   completely remove machine and all dependencies
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -4299,9 +4496,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `remove-machines`
+   _remove-machines_
 
 
+ 
 
 ^# remove-relation
 
@@ -4315,7 +4513,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -4332,9 +4530,12 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju remove-relation mysql wordpress
+
    In the case of multiple relations, the relation name should be specified
    at least once - the following examples will all have the same effect:
+
           juju remove-relation mediawiki:db mariadb:db
           juju remove-relation mediawiki mariadb:db
           juju remove-relation mediawiki:db mariadb
@@ -4343,15 +4544,16 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `add-relation`
+   [add-relation](#add-relation)
 
-      `remove-service`
+   [remove-service](#remove-service)
 
    **Aliases:**
 
-      `destroy-relation`
+   _destroy-relation_
 
 
+ 
 
 ^# remove-service
 
@@ -4365,7 +4567,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -4382,15 +4584,17 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju remove-service hadoop
           juju remove-service -m test-model mariadb
 
 
    **Aliases:**
 
-      `destroy-service`
+   _destroy-service_
 
 
+ 
 
 ^# remove-ssh-key
 
@@ -4404,7 +4608,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -4419,6 +4623,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju remove-ssh-key ubuntu@ubuntu
           juju remove-ssh-key 45:7f:33:2c:10:4e:6c:14:e3:a1:a4:c8:b2:e1:34:b4
           juju remove-ssh-key bob@ubuntu carol@ubuntu
@@ -4426,17 +4631,18 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `list-ssh-key`
+   [list-ssh-key](#list-ssh-key)
 
-      `add-ssh-key`
+   [add-ssh-key](#add-ssh-key)
 
-      `import-ssh-key`
+   [import-ssh-key](#import-ssh-key)
 
    **Aliases:**
 
-      `remove-ssh-keys`
+   _remove-ssh-keys_
 
 
+ 
 
 ^# remove-ssh-keys
 
@@ -4450,7 +4656,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -4465,6 +4671,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju remove-ssh-key ubuntu@ubuntu
           juju remove-ssh-key 45:7f:33:2c:10:4e:6c:14:e3:a1:a4:c8:b2:e1:34:b4
           juju remove-ssh-key bob@ubuntu carol@ubuntu
@@ -4472,17 +4679,18 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `list-ssh-key`
+   [list-ssh-key](#list-ssh-key)
 
-      `add-ssh-key`
+   [add-ssh-key](#add-ssh-key)
 
-      `import-ssh-key`
+   [import-ssh-key](#import-ssh-key)
 
    **Aliases:**
 
-      `remove-ssh-keys`
+   _remove-ssh-keys_
 
 
+ 
 
 ^# remove-unit
 
@@ -4496,7 +4704,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -4514,9 +4722,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `destroy-unit`
+   _destroy-unit_
 
 
+ 
 
 ^# resolved
 
@@ -4530,13 +4739,14 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-r, --retry  (= false)_
 
-      re-execute failed hooks
+   re-execute failed hooks
 
 
+ 
 
 ^# resources
 
@@ -4550,19 +4760,19 @@ Click on the expander to see details for each command.
 
    _--details  (= false)_
 
-      show detailed information about resources used by each unit.
+   show detailed information about resources used by each unit.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -4575,9 +4785,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `resources`
+   _resources_
 
 
+ 
 
 ^# restore-backup
 
@@ -4591,27 +4802,27 @@ Click on the expander to see details for each command.
 
    _-b  (= false)_
 
-      bootstrap a new state machine
+   bootstrap a new state machine
 
    _--constraints  (= )_
 
-      set model constraints
+   set model constraints
 
    _--file (= "")_
 
-      provide a file to be used as the backup.
+   provide a file to be used as the backup.
 
    _--id (= "")_
 
-      provide the name of the backup to be restored.
+   provide the name of the backup to be restored.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--upload-tools  (= false)_
 
-      upload tools if bootstraping a new machine.
+   upload tools if bootstraping a new machine.
 
    
    **Details:**
@@ -4633,6 +4844,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# retry-provisioning
 
@@ -4646,9 +4858,10 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
 
+ 
 
 ^# revoke
 
@@ -4662,11 +4875,11 @@ Click on the expander to see details for each command.
 
    _--acl (= "read")_
 
-      Access control ('read' or 'write')
+   Access control ('read' or 'write')
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    
    **Details:**
@@ -4682,16 +4895,20 @@ Click on the expander to see details for each command.
    **Examples:**
 
    Revoke read (and write) access from user 'joe' for model 'mymodel':
+
           juju revoke joe mymodel
+
    Revoke write access from user 'sam' for models 'model1' and 'model2':
+
           juju revoke --acl=write sam model1 model2
 
 
    **See also:**
 
-      `grant`
+   [grant](#grant)
 
 
+ 
 
 ^# run
 
@@ -4705,35 +4922,35 @@ Click on the expander to see details for each command.
 
    _--all  (= false)_
 
-      run the commands on all the machines
+   run the commands on all the machines
 
    _--format  (= smart)_
 
-      Specify output format (json|smart|yaml)
+   Specify output format (json|smart|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--machine  (= )_
 
-      one or more machine ids
+   one or more machine ids
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--service  (= )_
 
-      one or more service names
+   one or more service names
 
    _--timeout  (= 5m0s)_
 
-      how long to wait before the remote command is considered to have failed
+   how long to wait before the remote command is considered to have failed
 
    _--unit  (= )_
 
-      one or more unit ids
+   one or more unit ids
 
    
    **Details:**
@@ -4769,6 +4986,7 @@ Click on the expander to see details for each command.
    started with juju run by calling "juju show-action-status --name juju-run".
 
 
+ 
 
 ^# run-action
 
@@ -4782,23 +5000,23 @@ Click on the expander to see details for each command.
 
    _--format  (= smart)_
 
-      Specify output format (json|smart|yaml)
+   Specify output format (json|smart|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--params  (= )_
 
-      path to yaml-formatted params file
+   path to yaml-formatted params file
 
    _--string-args  (= false)_
 
-      use raw string values of CLI args
+   use raw string values of CLI args
 
    
    **Details:**
@@ -4824,11 +5042,13 @@ Click on the expander to see details for each command.
    action: <ID>
    $ juju show-action-output <ID>
    result:
+
         status: success
         file:
           size: 873.2
           units: GB
           name: foo.sql
+
    $ juju run-action mysql/3 backup --params parameters.yml
    ...
    Params sent will be the contents of parameters.yml.
@@ -4838,20 +5058,26 @@ Click on the expander to see details for each command.
    Params sent will be:
    out: out.tar.bz2
    file:
+
         kind: xz
         quality: high
+
    ...
    $ juju run-action mysql/3 backup --params p.yml file.kind=xz file.quality=high
    ...
    If p.yml contains:
    file:
+
         location: /var/backups/mysql/
         kind: gzip
+
    then the merged args passed will be:
    file:
+
         location: /var/backups/mysql/
         kind: xz
         quality: high
+
    ...
    $ juju run-action sleeper/0 pause time=1000
    ...
@@ -4861,6 +5087,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# scp
 
@@ -4874,15 +5101,15 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--proxy  (= false)_
 
-      Proxy through the API server
+   Proxy through the API server
 
    _--pty  (= true)_
 
-      Enable pseudo-tty allocation
+   Enable pseudo-tty allocation
 
    
    **Details:**
@@ -4914,26 +5141,36 @@ Click on the expander to see details for each command.
 
    Copy file /var/log/syslog from machine 2 to the client's current working
    directory:
+
           juju scp 2:/var/log/syslog .
+
    Copy directory /var/log/mongodb, recursively, from a mongodb unit
    to the client's local directory remote-logs:
+
           juju scp -- -r mongodb/0:/var/log/mongodb/ remote-logs
+
    Copy file foo.txt, in verbose mode, from the client's current working
    directory to an apache2 unit of model "mymodel":
+
           juju scp -- -v -m mymodel foo.txt apache2/1:
+
    Copy multiple files from the client's current working directory to machine
    2:
+
           juju scp file1 file2 2:
+
    Copy multiple files from the bob user account on machine 3 to the client's
    current working directory:
+
           juju scp bob@3:'file1 file2' .
 
 
    **See also:**
 
-      `ssh`
+   [ssh](#ssh)
 
 
+ 
 
 ^# set-budget
 
@@ -4957,6 +5194,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# set-config
 
@@ -4970,15 +5208,15 @@ Click on the expander to see details for each command.
 
    _--config  (= )_
 
-      path to yaml-formatted service config
+   path to yaml-formatted service config
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--to-default  (= false)_
 
-      set service option values to default
+   set service option values to default
 
    
    **Details:**
@@ -5002,23 +5240,25 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju set-config mysql dataset-size=80% backup_dir=/vol1/mysql/backups
           juju set-config apache2 --model mymodel --config /home/ubuntu/mysql.yaml
 
 
    **See also:**
 
-      `get-config`
+   [get-config](#get-config)
 
-      `deploy`
+   [deploy](#deploy)
 
-      `status`
+   [status](#status)
 
    **Aliases:**
 
-      `set-configs`
+   _set-configs_
 
 
+ 
 
 ^# set-configs
 
@@ -5032,15 +5272,15 @@ Click on the expander to see details for each command.
 
    _--config  (= )_
 
-      path to yaml-formatted service config
+   path to yaml-formatted service config
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--to-default  (= false)_
 
-      set service option values to default
+   set service option values to default
 
    
    **Details:**
@@ -5064,23 +5304,25 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju set-config mysql dataset-size=80% backup_dir=/vol1/mysql/backups
           juju set-config apache2 --model mymodel --config /home/ubuntu/mysql.yaml
 
 
    **See also:**
 
-      `get-config`
+   [get-config](#get-config)
 
-      `deploy`
+   [deploy](#deploy)
 
-      `status`
+   [status](#status)
 
    **Aliases:**
 
-      `set-configs`
+   _set-configs_
 
 
+ 
 
 ^# set-constraints
 
@@ -5094,7 +5336,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -5122,19 +5364,21 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju set-constraints mysql mem=8G cpu-cores=4
           juju set-constraints -m mymodel apache2 mem=8G arch=amd64
 
 
    **See also:**
 
-      `get-constraints`
+   [get-constraints](#get-constraints)
 
-      `get-model-constraints`
+   [get-model-constraints](#get-model-constraints)
 
-      `set-model-constraints`
+   [set-model-constraints](#set-model-constraints)
 
 
+ 
 
 ^# set-default-credential
 
@@ -5160,20 +5404,22 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju set-default-credential google credential_name
 
 
    **See also:**
 
-      `add-credential`
+   [add-credential](#add-credential)
 
-      `remove-credential`
+   [remove-credential](#remove-credential)
 
-      `list-credentials`
+   [list-credentials](#list-credentials)
 
-      `autoload-credentials`
+   [autoload-credentials](#autoload-credentials)
 
 
+ 
 
 ^# set-default-region
 
@@ -5193,14 +5439,16 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju set-default-region azure-china chinaeast
 
 
    **See also:**
 
-      `add-credential`
+   [add-credential](#add-credential)
 
 
+ 
 
 ^# set-meter-status
 
@@ -5214,11 +5462,11 @@ Click on the expander to see details for each command.
 
    _--info (= "")_
 
-      Set the meter status info to this string
+   Set the meter status info to this string
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -5228,11 +5476,13 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
         juju set-meter-status myapp RED # Set Red meter status on all units of myapp
         juju set-meter-status myapp/0 AMBER --info "my message" # Set AMBER meter status with "my message" as info on unit myapp/0
 
 
 
+ 
 
 ^# set-model-config
 
@@ -5246,7 +5496,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -5259,14 +5509,21 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju set-model-config logging-config='<root>=WARNING;unit=INFO'
           juju set-model-config -m mymodel api-port=17071 default-series=xenial
-   See also: list-models
-                get-model-config
-                unset-model-config
 
 
+   **See also:**
 
+   [ist-models](#ist-models)
+
+   [get-model-config](#get-model-config)
+
+   [unset-model-config](#unset-model-config)
+
+
+ 
 
 ^# set-model-constraints
 
@@ -5280,7 +5537,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -5297,15 +5554,23 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju set-model-constraints cpu-cores=8 mem=16G
           juju set-model-constraints -m mymodel root-disk=64G
-   See also: list-models
-                get-model-constraints
-                set-constraints
-                get-constraints
 
 
+   **See also:**
 
+   [ist-models](#ist-models)
+
+   [get-model-constraints](#get-model-constraints)
+
+   [set-constraints](#set-constraints)
+
+   [get-constraints](#get-constraints)
+
+
+ 
 
 ^# set-plan
 
@@ -5319,7 +5584,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -5338,6 +5603,7 @@ Click on the expander to see details for each command.
           juju set-plan myapp example/uptime
 
 
+ 
 
 ^# show-action-output
 
@@ -5351,19 +5617,19 @@ Click on the expander to see details for each command.
 
    _--format  (= smart)_
 
-      Specify output format (json|smart|yaml)
+   Specify output format (json|smart|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--wait (= "-1s")_
 
-      wait for results
+   wait for results
 
    
    **Details:**
@@ -5379,6 +5645,7 @@ Click on the expander to see details for each command.
    displayed.  This is also the behavior when any negative time is given.
 
 
+ 
 
 ^# show-action-status
 
@@ -5392,19 +5659,19 @@ Click on the expander to see details for each command.
 
    _--format  (= smart)_
 
-      Specify output format (json|smart|yaml)
+   Specify output format (json|smart|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--name (= "")_
 
-      an action name
+   an action name
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -5414,6 +5681,7 @@ Click on the expander to see details for each command.
    If --name <name> is provided the search will be done by name rather than by ID.
 
 
+ 
 
 ^# show-backup
 
@@ -5427,7 +5695,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -5437,6 +5705,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# show-budget
 
@@ -5450,15 +5719,15 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular)
+   Specify output format (json|tabular)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -5471,6 +5740,7 @@ Click on the expander to see details for each command.
           juju show-budget personal
 
 
+ 
 
 ^# show-cloud
 
@@ -5484,11 +5754,11 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (yaml)
+   Specify output format (yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -5500,13 +5770,19 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju show-cloud google
           juju show-cloud azure-china --output ~/azure_cloud_details.txt
-   See also: list-clouds
-                update-clouds
 
 
+   **See also:**
 
+   [ist-clouds](#ist-clouds)
+
+   [update-clouds](#update-clouds)
+
+
+ 
 
 ^# show-controller
 
@@ -5520,15 +5796,15 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (json|yaml)
+   Specify output format (json|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--show-passwords  (= false)_
 
-      Show passwords for displayed accounts
+   Show passwords for displayed accounts
 
    
    **Details:**
@@ -5540,6 +5816,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju show-controller
           juju show-controller aws google
           
@@ -5547,13 +5824,14 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `list-controllers`
+   [list-controllers](#list-controllers)
 
    **Aliases:**
 
-      `show-controllers`
+   _show-controllers_
 
 
+ 
 
 ^# show-controllers
 
@@ -5567,15 +5845,15 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (json|yaml)
+   Specify output format (json|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--show-passwords  (= false)_
 
-      Show passwords for displayed accounts
+   Show passwords for displayed accounts
 
    
    **Details:**
@@ -5587,6 +5865,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju show-controller
           juju show-controller aws google
           
@@ -5594,13 +5873,14 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `list-controllers`
+   [list-controllers](#list-controllers)
 
    **Aliases:**
 
-      `show-controllers`
+   _show-controllers_
 
 
+ 
 
 ^# show-machine
 
@@ -5614,19 +5894,19 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--utc  (= false)_
 
-      Display time as UTC in RFC3339 format
+   Display time as UTC in RFC3339 format
 
    
    **Details:**
@@ -5649,9 +5929,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `show-machines`
+   _show-machines_
 
 
+ 
 
 ^# show-machines
 
@@ -5665,19 +5946,19 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--utc  (= false)_
 
-      Display time as UTC in RFC3339 format
+   Display time as UTC in RFC3339 format
 
    
    **Details:**
@@ -5700,9 +5981,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `show-machines`
+   _show-machines_
 
 
+ 
 
 ^# show-model
 
@@ -5716,15 +5998,15 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (json|yaml)
+   Specify output format (json|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -5733,6 +6015,7 @@ Click on the expander to see details for each command.
    Show information about the current or specified model
 
 
+ 
 
 ^# show-status
 
@@ -5746,19 +6029,19 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|line|oneline|short|summary|tabular|yaml)
+   Specify output format (json|line|oneline|short|summary|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--utc  (= false)_
 
-      Display time as UTC in RFC3339 format
+   Display time as UTC in RFC3339 format
 
    
    **Details:**
@@ -5802,6 +6085,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju status
           juju status mysql
           juju status nova-*
@@ -5809,9 +6093,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `show-status`
+   _show-status_
 
 
+ 
 
 ^# show-storage
 
@@ -5825,15 +6110,15 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (json|smart|yaml)
+   Specify output format (json|smart|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -5858,6 +6143,7 @@ Click on the expander to see details for each command.
    [space separated storage ids]
 
 
+ 
 
 ^# show-user
 
@@ -5871,19 +6157,19 @@ Click on the expander to see details for each command.
 
    _-c, --controller (= "")_
 
-      Controller to operate in
+   Controller to operate in
 
    _--exact-time  (= false)_
 
-      Use full timestamp for connection times
+   Use full timestamp for connection times
 
    _--format  (= yaml)_
 
-      Specify output format (json|smart|yaml)
+   Specify output format (json|smart|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    
    **Details:**
@@ -5895,6 +6181,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju show-user
           juju show-user jsmith
           juju show-user --format json
@@ -5904,13 +6191,14 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `add-user`
+   [add-user](#add-user)
 
-      `register`
+   [register](#register)
 
-      `list-users`
+   [list-users](#list-users)
 
 
+ 
 
 ^# spaces
 
@@ -5924,19 +6212,19 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (json|yaml)
+   Specify output format (json|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--short  (= false)_
 
-      only display spaces.
+   only display spaces.
 
    
    **Details:**
@@ -5951,9 +6239,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `spaces`
+   _spaces_
 
 
+ 
 
 ^# ssh
 
@@ -5967,15 +6256,15 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--proxy  (= false)_
 
-      Proxy through the API server
+   Proxy through the API server
 
    _--pty  (= true)_
 
-      Enable pseudo-tty allocation
+   Enable pseudo-tty allocation
 
    
    **Details:**
@@ -5992,20 +6281,28 @@ Click on the expander to see details for each command.
    **Examples:**
 
    Connect to machine 0:
+
           juju ssh 0
+
    Connect to machine 1 and run command 'uname -a':
+
           juju ssh 1 uname -a
+
    Connect to a mysql unit:
+
           juju ssh mysql/0
+
    Connect to a jenkins unit as user jenkins:
+
           juju ssh jenkins@jenkins/0
 
 
    **See also:**
 
-      `scp`
+   [scp](#scp)
 
 
+ 
 
 ^# ssh-key
 
@@ -6019,11 +6316,11 @@ Click on the expander to see details for each command.
 
    _--full  (= false)_
 
-      Show full key instead of just the fingerprint
+   Show full key instead of just the fingerprint
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -6041,20 +6338,24 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju list-ssh-keys
+
    To examine the full key, use the '--full' option:
+
           juju list-keys -m jujutest --full
 
 
    **Aliases:**
 
-      `ssh-key,`
+   _ssh-key,_
 
-      `ssh-keys,`
+   _ssh-keys,_
 
-      `list-ssh-key`
+   _list-ssh-key_
 
 
+ 
 
 ^# ssh-keys
 
@@ -6068,11 +6369,11 @@ Click on the expander to see details for each command.
 
    _--full  (= false)_
 
-      Show full key instead of just the fingerprint
+   Show full key instead of just the fingerprint
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -6090,20 +6391,24 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju list-ssh-keys
+
    To examine the full key, use the '--full' option:
+
           juju list-keys -m jujutest --full
 
 
    **Aliases:**
 
-      `ssh-key,`
+   _ssh-key,_
 
-      `ssh-keys,`
+   _ssh-keys,_
 
-      `list-ssh-key`
+   _list-ssh-key_
 
 
+ 
 
 ^# status
 
@@ -6117,19 +6422,19 @@ Click on the expander to see details for each command.
 
    _--format  (= tabular)_
 
-      Specify output format (json|line|oneline|short|summary|tabular|yaml)
+   Specify output format (json|line|oneline|short|summary|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--utc  (= false)_
 
-      Display time as UTC in RFC3339 format
+   Display time as UTC in RFC3339 format
 
    
    **Details:**
@@ -6173,6 +6478,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju status
           juju status mysql
           juju status nova-*
@@ -6180,9 +6486,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `show-status`
+   _show-status_
 
 
+ 
 
 ^# status-history
 
@@ -6196,19 +6503,19 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-n  (= 20)_
 
-      size of logs backlog.
+   size of logs backlog.
 
    _--type (= "unit")_
 
-      type of statuses to be displayed [agent|workload|combined|machine|machineInstance|container|containerinstance].
+   type of statuses to be displayed [agent|workload|combined|machine|machineInstance|container|containerinstance].
 
    _--utc  (= false)_
 
-      display time as UTC in RFC3339 format
+   display time as UTC in RFC3339 format
 
    
    **Details:**
@@ -6239,6 +6546,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# storage
 
@@ -6252,23 +6560,23 @@ Click on the expander to see details for each command.
 
    _--filesystem  (= false)_
 
-      list filesystem storage
+   list filesystem storage
 
    _--format  (= tabular)_
 
-      Specify output format (json|tabular|yaml)
+   Specify output format (json|tabular|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--volume  (= false)_
 
-      list volume storage
+   list volume storage
 
    
    **Details:**
@@ -6289,9 +6597,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `storage`
+   _storage_
 
 
+ 
 
 ^# subnets
 
@@ -6305,23 +6614,23 @@ Click on the expander to see details for each command.
 
    _--format  (= yaml)_
 
-      Specify output format (json|yaml)
+   Specify output format (json|yaml)
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
    _--space (= "")_
 
-      filter results by space name
+   filter results by space name
 
    _--zone (= "")_
 
-      filter results by zone name
+   filter results by zone name
 
    
    **Details:**
@@ -6338,9 +6647,10 @@ Click on the expander to see details for each command.
 
    **Aliases:**
 
-      `subnets`
+   _subnets_
 
 
+ 
 
 ^# switch
 
@@ -6367,6 +6677,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju switch
           juju switch mymodel
           juju switch mycontroller
@@ -6375,13 +6686,14 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `list-controllers`
+   [list-controllers](#list-controllers)
 
-      `list-models`
+   [list-models](#list-models)
 
-      `show-controller`
+   [show-controller](#show-controller)
 
 
+ 
 
 ^# sync-tools
 
@@ -6395,45 +6707,45 @@ Click on the expander to see details for each command.
 
    _--all  (= false)_
 
-      copy all versions, not just the latest
+   copy all versions, not just the latest
 
    _--destination (= "")_
 
-      local destination directory
+   local destination directory
 
    _--dev  (= false)_
 
-      consider development versions as well as released ones
+   consider development versions as well as released ones
 
-      DEPRECATED: use --stream instead
+   DEPRECATED: use --stream instead
 
    _--dry-run  (= false)_
 
-      don't copy, just print what would be copied
+   don't copy, just print what would be copied
 
    _--local-dir (= "")_
 
-      local destination directory
+   local destination directory
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--public  (= false)_
 
-      tools are for a public cloud, so generate mirrors information
+   tools are for a public cloud, so generate mirrors information
 
    _--source (= "")_
 
-      local source directory
+   local source directory
 
    _--stream (= "")_
 
-      simplestreams stream for which to sync metadata
+   simplestreams stream for which to sync metadata
 
    _--version (= "")_
 
-      copy a specific major[.minor] version
+   copy a specific major[.minor] version
 
    
    **Details:**
@@ -6450,6 +6762,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# unblock
 
@@ -6463,7 +6776,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -6523,6 +6836,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
          To allow the model to be destroyed:
          juju unblock destroy-model
          To allow the machines, services, units and relations to be removed:
@@ -6533,9 +6847,10 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `juju help block`
+   [juju help block](#juju help block)
 
 
+ 
 
 ^# unexpose
 
@@ -6549,7 +6864,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -6563,14 +6878,16 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju unexpose wordpress
 
 
    **See also:**
 
-      `expose`
+   [expose](#expose)
 
 
+ 
 
 ^# unset-model-config
 
@@ -6584,7 +6901,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -6602,12 +6919,18 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju unset-model-config api-port test-mode
-   See also: set-model-config
-                get-model-config
 
 
+   **See also:**
 
+   [et-model-config](#et-model-config)
+
+   [get-model-config](#get-model-config)
+
+
+ 
 
 ^# update-allocation
 
@@ -6621,7 +6944,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -6636,6 +6959,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# update-clouds
 
@@ -6657,11 +6981,16 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju update-clouds
-   See also: list-clouds
 
 
+   **See also:**
 
+   [ist-clouds](#ist-clouds)
+
+
+ 
 
 ^# upgrade-charm
 
@@ -6675,35 +7004,35 @@ Click on the expander to see details for each command.
 
    _--channel (= "")_
 
-      channel to use when getting the charm or bundle from the charm store
+   channel to use when getting the charm or bundle from the charm store
 
    _--force-series  (= false)_
 
-      upgrade even if series of deployed services are not supported by the new charm
+   upgrade even if series of deployed services are not supported by the new charm
 
    _--force-units  (= false)_
 
-      upgrade all units immediately, even if in error state
+   upgrade all units immediately, even if in error state
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--path (= "")_
 
-      upgrade to a charm located at path
+   upgrade to a charm located at path
 
    _--resource  (= )_
 
-      resource to be uploaded to the controller
+   resource to be uploaded to the controller
 
    _--revision  (= -1)_
 
-      explicit revision of current charm
+   explicit revision of current charm
 
    _--switch (= "")_
 
-      crossgrade to a different charm
+   crossgrade to a different charm
 
    
    **Details:**
@@ -6769,6 +7098,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# upgrade-gui
 
@@ -6782,11 +7112,11 @@ Click on the expander to see details for each command.
 
    _--list  (= false)_
 
-      list available Juju GUI release versions without upgrading
+   list available Juju GUI release versions without upgrading
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -6805,6 +7135,7 @@ Click on the expander to see details for each command.
    	juju upgrade-gui --list
 
 
+ 
 
 ^# upgrade-juju
 
@@ -6818,27 +7149,27 @@ Click on the expander to see details for each command.
 
    _--dry-run  (= false)_
 
-      Don't change anything, just report what would be changed
+   Don't change anything, just report what would be changed
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    _--reset-previous-upgrade  (= false)_
 
-      Clear the previous (incomplete) upgrade status (use with care)
+   Clear the previous (incomplete) upgrade status (use with care)
 
    _--upload-tools  (= false)_
 
-      Upload local version of tools; for development use only
+   Upload local version of tools; for development use only
 
    _--version (= "")_
 
-      Upgrade to specific version
+   Upgrade to specific version
 
    _-y, --yes  (= false)_
 
-      Answer 'yes' to confirmation prompts
+   Answer 'yes' to confirmation prompts
 
    
    **Details:**
@@ -6877,6 +7208,7 @@ Click on the expander to see details for each command.
 
    **Examples:**
 
+
           juju upgrade-juju --dry-run
           juju upgrade-juju --version 2.0.1
           
@@ -6884,9 +7216,10 @@ Click on the expander to see details for each command.
 
    **See also:**
 
-      `sync-tools`
+   [sync-tools](#sync-tools)
 
 
+ 
 
 ^# upload-backup
 
@@ -6900,7 +7233,7 @@ Click on the expander to see details for each command.
 
    _-m, --model (= "")_
 
-      Model to operate in
+   Model to operate in
 
    
    **Details:**
@@ -6910,6 +7243,7 @@ Click on the expander to see details for each command.
 
 
 
+ 
 
 ^# version
 
@@ -6923,11 +7257,12 @@ Click on the expander to see details for each command.
 
    _--format  (= smart)_
 
-      Specify output format (json|smart|yaml)
+   Specify output format (json|smart|yaml)
 
    _-o, --output (= "")_
 
-      Specify an output file
+   Specify an output file
 
 
+ 
 

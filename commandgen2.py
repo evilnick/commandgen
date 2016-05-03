@@ -37,13 +37,13 @@ for c in commands:
       alias=pad+'**Aliases:**\n\n'
       for line in match:
         if (line !=''):
-          alias = alias+pad'`'+line.strip()+'`\n\n'
+          alias = alias+pad+'_'+line.strip()+'_\n\n'
     else:
       alias=u''
  
     # search for see also section
     # if it exists, truncate details and process
-    q= re.compile(u'See also: ?\n(.+?)$',re.DOTALL | re.IGNORECASE)
+    q= re.compile(u'See also: ?(.+?)$',re.DOTALL | re.IGNORECASE)
     x = re.search( q, htext)
     if x:
       match=htext[x.start()+11:].split('\n')
@@ -52,7 +52,8 @@ for c in commands:
       
       for line in match:
         if (line !=''):
-          also = also+pad+pad+'['+line.strip()+'](#'+line.strip()+')\n\n'
+          
+          also = also+pad+'['+line.strip()+'](#'+line.strip()+')\n\n'
     else:
       also=u''    
 
@@ -64,12 +65,20 @@ for c in commands:
       match=htext[x.start()+10:].split('\n')
       htext=htext[:x.start()] # truncate the bit we matched
       examples=pad+'**Examples:**\n\n'
-      
+      xflag = False
       for line in match:
         if (line !=''):
           if (line[0]==' '):
-            examples=examples+pad
-            pass
+              if xflag:
+                examples=examples+pad
+              else:
+                examples=examples+'\n'+pad
+              xflag=True
+          else :
+            if xflag:
+              # returning from indented block, add extra linebreak
+              examples=examples+'\n'
+              xflag=False
           examples = examples+pad+line+'\n'
       examples = examples.decode('utf-8')+'\n\n'
     else:
@@ -125,7 +134,7 @@ for c in commands:
     x = re.search( q, htext)    
     usage=pad+"**Usage:** `"+x.groups()[0].decode('utf-8')+"`\n\n"
     summary=pad+"**Summary:**\n\n"+pad+x.groups()[1].decode('utf-8')+"\n\n"
-    outfile.write(header+usage+summary+options+details+examples+also+alias+'\n\n')
+    outfile.write(header+usage+summary+options+details+examples+also+alias+'\n \n\n')
 
 
 outfile.close()
